@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/project.css" />
+    <title>My Projects</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+        </ul>
+      </header>
+      <video id="background-video" src="./videos/Pexels.mp4" muted autoplay loop></video>
+      <div class="overlay"></div>
+      <section id="video-container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="40000">
+        <h1 id="my-project">My Projects</h1>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://inspiredfitness.herokuapp.com/">
+              <video id="vid1" class="d-block w-100" src="./videos/InspiredFitnessProject.mp4" type="video/mp4" autoplay loop muted></video></a>
+              <div class='vid-text'>
+                <h3><a href="https://inspiredfitness.herokuapp.com/">Inspired Fitness & Training Facility</a></h3><h6><a href="https://github.com/MichaelEclavea/InspiredFitnessShop">Source Code</a></h6>
+                <p>This site was created for a clients fitness shop. A online e-commerce site made with React, Redux, MongoDB, JavaScript, HTML & CSS.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://codeheroesquest.herokuapp.com/">
+              <video id="vid2" class="d-block w-100" src="./videos/CodeQuestProject.mp4" type="video/mp4" autoplay loop muted></video></a>
+              <div class='vid-text'>
+                <h3><a href="https://codeheroesquest.herokuapp.com/">Code Heroes Quest</a></h3><h6><a href="https://github.com/code-heros-quest/codeHerosQuest">Source Code</a></h6>
+                <p>A full story text-based web game. Code Fellows 401 JavaScript Final Project. Built using React, JavaScript, Socket.io, Express, chalk, jest, HTML, CSS, Inquirer and Inkarnate.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <a href="https://my-quick-pick.herokuapp.com/">
+              <video id="vid3" class="d-block w-100" src="./videos/MyQuickPickProject.mp4" type="video/mp4" autoplay loop muted></video></a>
+              <div class='vid-text'>
+                <h3><a href="https://my-quick-pick.herokuapp.com/">My Quick Pick</a></h3><h6><a href="https://github.com/MichaelEclavea/QuickPick">Source Code</a></h6>
+                <p>n application that is designed to allow people to better tailor their lotto quick picks to a more specified range. Built with React.js, JavaScript, HTML, CSS, Node.js and node-sass.</p>
+              </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+      <ul class="social">
+        <li>
+          <a href="https://www.linkedin.com/in/michaeleclavea206/"><i class="fab fa-linkedin fa-7x"></i></a>
+        </li>
+        <li>
+            <a href="https://github.com/MichaelEclavea"><i class="fab fa-github-alt fa-7x"></i></a>
+        </li>
+        <li>
+            <a href="mailto:usermike671@gmail.com"><i class="far fa-envelope fa-7x"></i></a>
+        </li>
+      </ul>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

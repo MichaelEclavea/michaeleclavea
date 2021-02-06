@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Michael Eclavea</title>
+  </head>
+  <body>
+          <section class="showcase">
+            <header>
+              <ul class='links'>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>              
+                <li><a href="/projects">Projects</a></li>
+              </ul>
+            </header>
+            <video src="./videos/Pexels.mp4" muted autoplay loop></video>
+            <div class="overlay"></div>
+            <video id="whale" src="./videos/whale.mp4" muted></video>
+            
+            <section id="text-container" >
+            <div class="text" id="ripple">
+              <h2>Michael Eclavea</h2>
+              <br/>
+              <h3>Full Stack Software Developer</h3>
+              <p>
+                Hello friend, thanks for stopping by my site! I am a software developer that has a passion for coding and creating amazing things!
+              </p>
+              <a id="btn-animate">Animate</a>
+            </div>                 
+            </section>
+            <ul class="social">
+                <li>
+                    <a href="https://www.linkedin.com/in/michaeleclavea206/"><i class="fab fa-linkedin fa-7x"></i></a>
+                  </li>
+                  <li>
+                      <a href="https://github.com/MichaelEclavea"><i class="fab fa-github-alt fa-7x"></i></a>
+                  </li>
+                  <li>
+                      <a href="mailto:usermike671@gmail.com"><i class="far fa-envelope fa-7x"></i></a>
+                  </li>
+              </ul>
+          </section>
+
+          <script>
+            const textArea = document.getElementById('text-container');
+            const animate = document.getElementById('btn-animate');
+            const vid = document.getElementById('whale');
+            let toggleSwitch = true;
+            if(toggleSwitch) {
+              
+              toggleSwitch = false;
+              animate.addEventListener('click', function() {
+                clearInterval()
+                vid.style.transition="3s";
+                vid.style.opacity = "0.4";
+                vid.play();
+                animate.style.backgroundColor = "white";
+                animate.innerHTML = "Playing...";
+                
+                let animation = setInterval(() => {
+                  vid.style.opacity = "0";
+                  animate.innerHTML = "ANIMATE";
+                  animate.style.backgroundColor = "#22a3e9";
+                  toggleSwitch = true;
+                  clearInterval(animation);
+                }, 14500);
+              });
+            }
+
+          </script>
+    <script src="./app.js"></script>
+  </body>
+</html>
