@@ -274,16 +274,42 @@ i:hover {
 @media (max-width: 798px) {
   .showcase,
   .showcase header {
-    padding: 40px;
+    padding: 5px;
+    display: flex;
     justify-content: center;
+    overflow-x: hidden;
   }
   .showcase header li {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .text h2 {
-    font-size: 3em;
+    font-size: 2em;
   }
   .text h3 {
-    font-size: 2em;
+    font-size: 1.6em;
+  }
+  #video-container {
+    width: 100vw;
+  }
+  #vid1 {
+    max-height: 240px;
+    width: 100%;
+    padding: 0px 5px;
+  }
+  #vid2 {
+    max-height: 240px;
+    width: 100%;
+    padding: 0px 5px;
+  }
+  #vid3 {
+    max-height: 240px;
+    width: 100%;
+    padding: 0px 5px;
+  }
+  ul {
+    display: block;
+  }
+  .social, li {
+    padding: 0px;
   }
 }
